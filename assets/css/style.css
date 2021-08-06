@@ -473,7 +473,7 @@ body {
     background-color: #fe814f;
     border-radius: 25px 0px 0px 25px;
     z-index: 1;
-    box-shadow: -10px -10px 30px 0 #fe814f inset, 10px 10px 30px 0 #b33a0a inset;;
+    box-shadow: -10px -10px 30px 0 #fe814f inset, 10px 10px 30px 0 #b33a0a inset;
     transition: width 1s ease-in;
     animation: sideout 0.8s ease-in;
     animation-fill-mode: forwards;
@@ -1117,14 +1117,28 @@ label {
 }
 
 .loader{
+    position: absolute;
     z-index: 100;
-    height: 100%;
+    height: 105%;
     width: 100%;
-    background-color: var(--background-color);
+    min-width: 100%;
+    background-color: #fe814f;
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    overflow: hidden;
+}
+
+html{
+    position: relative;
 }
 
 
 
+.lottie{
+    border-radius: 25px; box-shadow: -10px -10px 30px 0 #fe814f, 10px 10px 30px 0 #b33a0a;
+}

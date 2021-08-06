@@ -228,3 +228,9 @@ function slideExp(index){
     let cs=$('.experience-slides')[index];
     $(cs).addClass('d-block')
 }
+
+window.onload=function(e){
+    setTimeout(()=>{
+        // document.querySelector('.loader').style.display='none';
+    },10000);
+}
