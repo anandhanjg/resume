@@ -67,7 +67,7 @@ function main(){
     $('.social-icon').on('click',function(e){
         let id=e.currentTarget.id;
         if(id.includes('insta')){
-            window.open("https://instagram.com");
+            window.open("https://www.instagram.com/anandhan.ganesh/");
         }else if(id.includes('fb')){
             window.open("https://www.facebook.com/anandhanjg.dev")
         }else if(id.includes('wp')){
@@ -76,6 +76,8 @@ function main(){
             window.open("https://www.linkedin.com/in/anandhan-ganesh-577491156")
         }else if(id.includes('github')){
             window.open("https://www.github.com/anandhanjg")
+        }else if(id.includes('twitter')){
+            window.open('https://twitter.com/anandhanjg')
         }
     });
 
