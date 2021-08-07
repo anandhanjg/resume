@@ -1136,6 +1136,7 @@ label {
     overflow: hidden;
     transition: opacity 1s ease-in-out;
     opacity: 0;
+    flex-direction: column;
 }
 
 html{
@@ -1147,3 +1148,11 @@ html{
 .lottie{
     border-radius: 25px; box-shadow: -10px -10px 30px 0 #fe814f, 10px 10px 30px 0 #b33a0a;
 }
+
+.error{
+    display: none;
+    background-color: var(--main-color);
+    font-size: 20px;
+}
+
+
