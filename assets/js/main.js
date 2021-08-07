@@ -1,16 +1,8 @@
 
-let hours=new Date().getHours();
+
 let index=0;
 let ctab;
-if(hours<6){
-    index=0;
-}else if(hours<12){
-    index=1;
-}else if(hours<18){
-    index=2
-}else{
-    index=3;
-}
+
 
 jQuery(
 function(){
@@ -21,10 +13,16 @@ function(){
 
 const colors=['red','blue','green','#5c2abb']
 
-// document.documentElement.style.setProperty('--main-color',colors[index]);
-
-// var sheet = document.styleSheets[1];
-// sheet.insertRule(`:root{--main-color:${colors[index]}}`);
+let hours=new Date().getHours();
+if(hours<6){
+    index=0;
+}else if(hours<12){
+    index=1;
+}else if(hours<18){
+    index=2
+}else{
+    index=3;
+}
 
 document.querySelector(':root').style.setProperty('--main-color', colors[index]);
 
@@ -40,7 +38,7 @@ const tabs={
 }
 
 function main(){
-    showTab(tabs.home);
+    
 
     // $('.clicked').css('color',colors[index]);
 
@@ -232,8 +230,16 @@ function slideExp(index){
 window.onload=function(e){
     setTimeout(()=>{
         document.querySelector('.loader').style.opacity=0;
+
+
         setTimeout(()=>{
             document.querySelector('.loader').style.display='none';
-        },500);
+            document.querySelector('.main-box').style.opacity=1;
+            showTab(tabs.home);    
+        },1001);
     },3000);
 }
+
+setTimeout(()=>{
+    document.querySelector('.loader').style.opacity=1;
+},200);

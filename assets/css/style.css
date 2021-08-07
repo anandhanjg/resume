@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900');
 
 :root{
-    --main-color:#ec0b0b7e;
+    --main-color:red;
     --background-color:#F0F0F3;
     --box-shadow-1:#FFFFFF;
     --box-shadow-2:#AEAEC0;
@@ -57,6 +57,7 @@ body {
     border-radius: 20px;
     box-shadow:var(--shadow-outer);
     transition: all 0.3s ease 0s;
+    opacity: 0;
 }
 
 .box, .social-icon {
@@ -188,6 +189,8 @@ body {
     margin-top: 30px;
     border-radius: 30px;
     box-shadow: var(--shadow-inner);
+    opacity: 0;
+    display: none;
 }
 
 .home{
@@ -1122,7 +1125,7 @@ label {
     height: 105%;
     width: 100%;
     min-width: 100%;
-    background-color: #fe814f;
+    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1131,7 +1134,8 @@ label {
     bottom: 0;
     top:0;
     overflow: hidden;
-    transition: all 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
 }
 
 html{
