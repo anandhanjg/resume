@@ -229,11 +229,12 @@ function slideExp(index){
 
 window.onload=clearLoader;
 function clearLoader(e){
+    let loader=document.querySelector('.loader')
     setTimeout(()=>{
         if(window.innerWidth>900){
-            document.querySelector('.loader').style.opacity=0;
+            loader.style.opacity=0;
             setTimeout(()=>{
-                document.querySelector('.loader').style.display='none';
+                loader.style.display='none';
                 document.querySelector('.main-box').style.opacity=1;
                 showTab(tabs.home);    
             },1001);

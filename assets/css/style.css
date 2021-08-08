@@ -9,6 +9,10 @@
 
     --shadow-outer:-10px -10px 30px 0 var(--box-shadow-1), 10px 10px 30px 0 var(--box-shadow-2);
     --shadow-inner:-10px -10px 30px 0 var(--box-shadow-1) inset, 10px 10px 30px 0 var(--box-shadow-2) inset;
+
+    --main-color-shadow1:red;
+    --main-color-shadow2:red;
+
 }
 
 html {
@@ -1150,9 +1154,11 @@ html{
 }
 
 .error{
-    display: none;
+    display: block;
     background-color: var(--main-color);
     font-size: 20px;
+    color:var(--main-color);
+    font-weight: 500;
 }
 
 
