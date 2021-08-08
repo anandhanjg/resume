@@ -61,7 +61,7 @@ body {
     border-radius: 20px;
     box-shadow:var(--shadow-outer);
     transition: all 0.3s ease 0s;
-    opacity: 0;
+    display: none;
 }
 
 .box, .social-icon {
@@ -117,27 +117,27 @@ body {
 }
 
 .social-icon:nth-child(1){
-    animation-delay: 0.2s;
-}
-
-.social-icon:nth-child(2){
     animation-delay: 0.4s;
 }
 
-.social-icon:nth-child(3){
+.social-icon:nth-child(2){
     animation-delay: 0.6s;
 }
 
-.social-icon:nth-child(4){
+.social-icon:nth-child(3){
     animation-delay: 0.8s;
 }
 
-.social-icon:nth-child(5){
+.social-icon:nth-child(4){
     animation-delay: 1.0s;
 }
 
-.social-icon:nth-child(6){
+.social-icon:nth-child(5){
     animation-delay: 1.2s;
+}
+
+.social-icon:nth-child(6){
+    animation-delay: 1.4s;
 }
 
 
@@ -477,13 +477,15 @@ body {
     height: 100%;
     width: 0%;
     left: 0;
-    background-color: #fe814f;
+    /* background-color: #fe814f; */
     border-radius: 25px 0px 0px 25px;
     z-index: 1;
-    box-shadow: -10px -10px 30px 0 #fe814f inset, 10px 10px 30px 0 #b33a0a inset;
+    /* box-shadow: -10px -10px 30px 0 #fe814f inset, 10px 10px 30px 0 #b33a0a inset; */
     transition: width 1s ease-in;
     animation: sideout 0.8s ease-in;
     animation-fill-mode: forwards;
+    background-color: #ffffff;
+    box-shadow: -10px -10px 30px 0 #ffffff inset, 10px 10px 30px 0 #ddd7d7 inset;
 }
 
 .education-card:nth-child(1)::before{

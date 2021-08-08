@@ -235,7 +235,8 @@ function clearLoader(e){
             loader.style.opacity=0;
             setTimeout(()=>{
                 loader.style.display='none';
-                document.querySelector('.main-box').style.opacity=1;
+                // document.querySelector('.main-box').style.opacity=1;
+                document.querySelector('.main-box').style.display='block';
                 showTab(tabs.home);    
             },1001);
         }else{
