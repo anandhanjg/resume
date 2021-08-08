@@ -1156,7 +1156,7 @@ html{
 }
 
 .error{
-    display: block;
+    /* display: block; */
     background-color: var(--main-color);
     font-size: 20px;
     /* color:var(--main-color); */
