@@ -202,15 +202,15 @@ audio.onended=function(e){
 }
 
 
-setInterval(()=>{
-    let tbs=Object.values(tabs);
-    let ind=tbs.indexOf(ctab);
-    ind=ind==tbs.length-1?tbs[0]:tbs[ind+1]
-    showTab(ind);
-    console.log(ind)
-    $(`.box`).removeClass('clicked');
-    $(`#${ind}`).addClass('clicked');
-},1000000)
+// setInterval(()=>{
+//     let tbs=Object.values(tabs);
+//     let ind=tbs.indexOf(ctab);
+//     ind=ind==tbs.length-1?tbs[0]:tbs[ind+1]
+//     showTab(ind);
+//     console.log(ind)
+//     $(`.box`).removeClass('clicked');
+//     $(`#${ind}`).addClass('clicked');
+// },1000000)
 
 var cpi=0,cpe=0;
 
