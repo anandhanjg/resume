@@ -37,10 +37,11 @@ const tabs={
     contact:"contact"
 }
 
+ // $('.clicked').css('color',colors[index]);
 function main(){
     
 
-    // $('.clicked').css('color',colors[index]);
+   
 
     $('.box.nav').on('click',function(e){
 
