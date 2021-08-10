@@ -50,9 +50,9 @@ function main(){
         }
 
 
-        $('.box.nav').removeClass('clicked');
-        $('.box.nav').css('color','black');
-        $(e.currentTarget).addClass('clicked');
+        // $('.box.nav').removeClass('clicked');
+        // $('.box.nav').css('color','black');
+        // $(e.currentTarget).addClass('clicked');
         // $(e.currentTarget).css('color',colors[index]);
 
         showTab(e.currentTarget.id);
@@ -111,6 +111,9 @@ function main(){
 }
 
 function showTab(tabId){
+    $('.box.nav').removeClass('clicked');
+    $('.box.nav').css('color','black');
+    $(`#${tabId}`).addClass('clicked');
     $('.content').css('transition','opacity 0.5s ease-in-out 0s')
     $('.content').css('opacity',0)
     ctab=tabId;
