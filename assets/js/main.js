@@ -256,7 +256,9 @@ setTimeout(()=>{
 
 window.onresize=function(e){
     if(window.innerWidth>900){
-        clearLoader();
+        if(document.querySelector('.loader').style.opacity==0){
+            clearLoader();
+        }
     }else{
         window.location.reload()
     }
