@@ -1337,6 +1337,10 @@ html{
     .input-box{
         width: 95% !important;
     } 
+
+    .my-job{
+        font-size: 14px !important;
+    }
   }
 
   .project-desc{
