@@ -152,10 +152,14 @@ function showTab(tabId){
 
 
     if(tabId==tabs.projects){
+        $('.pro_dots span > span').removeClass('selected-dot');
+        $('.pro_dots span > span')[0].setAttribute('class','selected-dot')
         slidePro(cpi=0);
     }
 
     if(tabId==tabs.experience){
+        $('.exp_dots span > span').removeClass('selected-dot');
+        $('.exp_dots span > span')[0].setAttribute('class','selected-dot');
         slideExp(cpe=0);
     }
 }
