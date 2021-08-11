@@ -81,22 +81,30 @@ function main(){
         }
     });
 
-    $('.project-arrow-left').on('click',function(e){
-        slidePro(cpi==0?(cpi=$('.project-slides').length-1):(--cpi));
-    });
+    
 
-    $('.project-arrow-right').on('click',function(e){
+    function proSlideLeft(e){
+        slidePro(cpi==0?(cpi=$('.project-slides').length-1):(--cpi));
+    }
+
+    function proSlideRight(e){
         slidePro(cpi==($('.project-slides').length-1)?(cpi=0):(++cpi));
-    });
+    }
+
+    function expSlideLeft(e){
+        slideExp(cpe==0?(cpe=$('.experience-slides').length-1):(--cpe));
+    }
+
+    function expSlideRight(e){
+        slideExp(cpe==($('.experience-slides').length-1)?(cpe=0):(++cpe));
+    }
+
+    $('.project-arrow-left').on('click',proSlideLeft);
+    $('.project-arrow-right').on('click',proSlideRight);
 
  
-    $('.experience-arrow-left').on('click',function(e){
-        slideExp(cpe==0?(cpe=$('.experience-slides').length-1):(--cpe));
-    });
-
-    $('.experience-arrow-right').on('click',function(e){
-        slideExp(cpe==($('.experience-slides').length-1)?(cpe=0):(++cpe));
-    });
+    $('.experience-arrow-left').on('click',expSlideLeft);
+    $('.experience-arrow-right').on('click',expSlideRight);
 
 
     $('.skill-content').on('mouseover',function(e){
@@ -113,17 +121,15 @@ function main(){
 
     $('.exp_dots > span').on('click',function(e){
         $('.exp_dots span > span').removeClass('selected-dot');
-        console.log(e.currentTarget);
-        slideExp(cpe=Number(e.currentTarget.id.replace('exp_')));
+        slideExp(cpe=Number(e.currentTarget.id.replace('exp_',"")));
         e.currentTarget.children[0].setAttribute('class','selected-dot')
     });
 
     $('.pro_dots > span').on('click',function(e){
         $('.pro_dots span > span').removeClass('selected-dot');
-        slidePro(cpi=Number(e.currentTarget.id.replace('pro_')));
+        cpi=Number(e.currentTarget.id.replace('pro_',""))
+        slidePro(cpi);
         e.currentTarget.children[0].setAttribute('class','selected-dot')
-        
-
     });
 }
 
