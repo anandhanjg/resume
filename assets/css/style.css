@@ -1323,14 +1323,22 @@ html{
         font-size: 18px;
     }
 
+    .experience-content{
+        justify-content: inherit;
+    }
+
   }
 
   .experience-title{
     margin: 2px;
   }
   
-  /* @media only screen and (min-width: 800px) {
-    body {
-      background-color: red;
-    }
-  } */
+  @media only screen and (max-width: 500px) {
+    .input-box{
+        width: 95% !important;
+    } 
+  }
+
+  .project-desc{
+      background: none;
+  }
