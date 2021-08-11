@@ -1329,6 +1329,11 @@ html{
         justify-content: inherit;
     }
 
+    .project-link:hover {
+        transform: scale(1);
+        /* color: black; */
+    }
+
   }
 
   .experience-title{
