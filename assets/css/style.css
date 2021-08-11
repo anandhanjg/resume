@@ -46,6 +46,7 @@ body {
         padding: 10px;
         display: flex;
         align-items: center;
+        overflow: hidden;
 }
 
 .social-icons{
