@@ -235,7 +235,7 @@ window.onload=clearLoader;
 function clearLoader(e){
     let loader=document.querySelector('.loader')
     setTimeout(()=>{
-        if(window.innerWidth>900){
+        // if(window.innerWidth>900){
             loader.style.opacity=0;
             setTimeout(()=>{
                 loader.style.display='none';
@@ -243,9 +243,9 @@ function clearLoader(e){
                 document.querySelector('.main-box').style.display='block';
                 showTab(tabs.home);    
             },1001);
-        }else{
-            document.querySelector('.error').style.display='block';
-        }
+        // }else{
+        //     document.querySelector('.error').style.display='block';
+        // }
     },3000);
 }
 
@@ -254,12 +254,12 @@ setTimeout(()=>{
 },200);
 
 
-window.onresize=function(e){
-    if(window.innerWidth>900){
-        if(document.querySelector('.loader').style.opacity==0){
-            clearLoader();
-        }
-    }else{
-        window.location.reload()
-    }
-}
+// window.onresize=function(e){
+//     if(window.innerWidth>900){
+//         if(document.querySelector('.loader').style.opacity==0){
+//             clearLoader();
+//         }
+//     }else{
+//         window.location.reload()
+//     }
+// }
