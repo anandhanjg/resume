@@ -41,7 +41,8 @@ const tabs={
 function main(){
     
 
-   
+   addProDots();
+   addExpDots();
 
     $('.box.nav').on('click',function(e){
 
@@ -109,6 +110,21 @@ function main(){
         img.style.opacity=1;
         perc.style.opacity=0;
     })
+
+    $('.exp_dots > span').on('click',function(e){
+        $('.exp_dots span > span').removeClass('selected-dot');
+        console.log(e.currentTarget);
+        slideExp(cpe=Number(e.currentTarget.id.replace('exp_')));
+        e.currentTarget.children[0].setAttribute('class','selected-dot')
+    });
+
+    $('.pro_dots > span').on('click',function(e){
+        $('.pro_dots span > span').removeClass('selected-dot');
+        slidePro(cpi=Number(e.currentTarget.id.replace('pro_')));
+        e.currentTarget.children[0].setAttribute('class','selected-dot')
+        
+
+    });
 }
 
 function showTab(tabId){
@@ -263,3 +279,54 @@ setTimeout(()=>{
 //         window.location.reload()
 //     }
 // }
+
+
+
+//add pro_dots inside projects-content
+function addProDots(){
+    let len=$('.project-slides').length
+    let div=document.createElement('div')
+    div.setAttribute('class','pro_dots');
+
+    for(var i=0;i<len;i++){
+        let span=document.createElement('span');
+        let childSpan=document.createElement('span');
+        span.setAttribute('id',`pro_${i}`);
+        
+        if(i==0){
+            childSpan.setAttribute('class','selected-dot')
+        }
+        span.appendChild(childSpan);
+        div.appendChild(span);
+    }
+    document.getElementsByClassName('projects-content')[0].appendChild(div);
+}
+
+// add exp_dots inside experiences-content
+function addExpDots(){
+    let len=$('.experience-slides').length
+
+    let div=document.createElement('div')
+    div.setAttribute('class','exp_dots');
+
+    for(var i=0;i<len;i++){
+        let span=document.createElement('span');
+        let childSpan=document.createElement('span');
+        span.setAttribute('id',`exp_${i}`);
+        
+        if(i==0){
+            childSpan.setAttribute('class','selected-dot')
+        }
+        span.appendChild(childSpan);
+        div.appendChild(span);
+    }
+    document.getElementsByClassName('experiences-content')[0].appendChild(div);
+}
+
+function selectProDot(index){
+
+}
+
+function selectExpDot(index){
+
+}

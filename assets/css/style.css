@@ -1330,8 +1330,47 @@ html{
     }
 
     .project-link:hover {
-        transform: scale(1);
+        transform: scale(1) !important;
         /* color: black; */
+    }
+
+    .exp_dots , .pro_dots {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 42;
+        height: 30px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        background: none;
+    }
+
+
+    .exp_dots > span , .pro_dots > span{
+        width: 15px;
+        height: 15px;
+        /* position: relative; */
+        /* background: var(--main-color); */
+        border-radius: 100%;
+        content: "";
+        margin: 1px;
+        box-shadow: var(--shadow-inner);
+    }
+
+    .selected-dot{
+        width: 8px;
+        display: block;
+        height: 45%;
+        border-radius: 100px;
+        height: 8px;
+        background-color: var(--main-color);
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
   }
