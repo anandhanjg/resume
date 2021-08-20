@@ -340,3 +340,7 @@ function selectProDot(index){
 function selectExpDot(index){
 
 }
+
+setTimeout(()=>{
+    console.table({DevelopedBy:"Anandhan"})
+},2000);

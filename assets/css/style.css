@@ -887,7 +887,7 @@ body {
 }
 
 .project-link:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* color:black; */
 }
 
@@ -1330,7 +1330,7 @@ html{
     }
 
     .project-link:hover {
-        transform: scale(1) !important;
+        /* transform: scale(1) !important; */
         /* color: black; */
     }
 
