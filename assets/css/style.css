@@ -77,7 +77,7 @@ body {
              -20px -20px 60px #ffffff; */
 }
 
-.box:hover , .social-icon:hover{
+.box:hover , .social-icon:hover , .box:focus, .social-icon:focus{
     transition: all 0.3s ease 0s;
     box-shadow: var(--shadow-inner);
     

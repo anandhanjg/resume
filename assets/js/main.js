@@ -1,6 +1,6 @@
 
 
-let index=0;
+let index=Math.round(1.0*((Math.random()*(3-0))+0));
 let ctab;
 
 
@@ -13,16 +13,16 @@ function(){
 
 const colors=['red','blue','green','#5c2abb']
 
-let hours=new Date().getHours();
-if(hours<6){
-    index=0;
-}else if(hours<12){
-    index=1;
-}else if(hours<18){
-    index=2
-}else{
-    index=3;
-}
+// let hours=new Date().getHours();
+// if(hours<6){
+//     index=0;
+// }else if(hours<12){
+//     index=1;
+// }else if(hours<18){
+//     index=2
+// }else{
+//     index=3;
+// }
 
 document.querySelector(':root').style.setProperty('--main-color', colors[index]);
 
