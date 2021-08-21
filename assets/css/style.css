@@ -885,11 +885,11 @@ body {
     transition: all 0.25s linear;
     color:var(--main-color);
 }
-
+/* 
 .project-link:hover{
-    /* transform: scale(1.1); */
-    /* color:black; */
-}
+    transform: scale(1.1);
+    color:black;
+} */
 
 .project-link > i {
     z-index: 3;
@@ -1329,10 +1329,10 @@ html{
         justify-content: inherit;
     }
 
-    .project-link:hover {
-        /* transform: scale(1) !important; */
-        /* color: black; */
-    }
+    /* .project-link:hover {
+        transform: scale(1) !important; 
+        color: black;
+    } */
 
     .exp_dots , .pro_dots {
         position: absolute;
