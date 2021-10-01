@@ -1,6 +1,6 @@
+const colors=['blue','red','green','#5c2abb','tomato','fuchsia','yellowgreen'];
 
-
-let index=Math.round(1.0*((Math.random()*(3-0))+0));
+let index=Math.round(1.0*((Math.random()*((colors.length-1)-0))+0));
 let ctab;
 
 
@@ -11,7 +11,7 @@ function(){
     
 })
 
-const colors=['red','blue','green','#5c2abb']
+
 
 // let hours=new Date().getHours();
 // if(hours<6){
