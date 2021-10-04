@@ -1,4 +1,4 @@
-const colors=['blue','red','green','tomato','fuchsia','yellowgreen'];
+const colors=['blue','red','green','#5c2abb','tomato','yellowgreen'];
 
 let index=Math.round(1.0*((Math.random()*((colors.length-1)-0))+0));
 let ctab;
