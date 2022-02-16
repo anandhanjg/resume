@@ -1,3 +1,5 @@
+console.log(`https://drive.google.com/file/d/1qjGyx6sWTeOzetzn4PY9Qpfle4H0OkuD/view?usp=sharing`)
+
 const colors=['blue','red','green','#5c2abb','tomato','yellowgreen'];
 
 let index=Math.round(1.0*((Math.random()*((colors.length-1)-0))+0));
